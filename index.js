@@ -16,5 +16,7 @@ const resultContainer = document.getElementById("result")
 calculateBtn.addEventListener("click",()=>{
     let result =get_recovered_energy(speed.value,time.value)
     resultContainer.innerHTML =`${result}kWh`
+    used_V.innerHTML=speed.value
+    used_time.innerHTML=time.value
 
 })
